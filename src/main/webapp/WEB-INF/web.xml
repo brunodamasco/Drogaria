@@ -13,6 +13,12 @@
 		<param-value>Development</param-value>
 	</context-param>
 
+	<!-- Tema do PrimeFaces -->
+	<context-param>
+		<param-name>primefaces.THEME</param-name>
+		<param-value>home</param-value>
+	</context-param>
+
 	<!-- Configuração do JSF -->
 	<servlet>
 		<servlet-name>Faces Servlet</servlet-name>
@@ -23,7 +29,7 @@
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
-	
+
 	<!-- Carregamento do Hibernate -->
 	<listener>
 		<listener-class>br.pro.bruno.drogaria.util.HibernateContexto</listener-class>
